@@ -27,7 +27,6 @@ import java.nio.charset.StandardCharsets
 open class BaseTest {
     protected val webServer = MockWebServer()
     protected lateinit var baseUri: Uri
-    private val mockLifecycleOwner = Mockito.mock(LifecycleOwner::class.java)
 
     companion object {
         const val BASE_URI_PATH = "/test/path/v0_1"
